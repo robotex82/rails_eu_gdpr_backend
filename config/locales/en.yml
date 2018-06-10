@@ -1,0 +1,20 @@
+en:
+  activerecord:
+    models:
+      eu_gdpr/privacy_policy:
+        one: Privacy Policy
+        other: Privacy Policies
+  activemodel:
+    models:
+      eu_gdpr/personal_data:
+        one: Personal Data
+        other: Personal Data
+    attributes:
+      eu_gdpr/personal_data:
+        root: Root Object
+        options: Options
+        block: Block
+  classes:
+    eu_gdpr/backend/engine: EU GDPR
+  routes:
+    eu-gdpr-backend-engine: 'eu-gdpr'

@@ -1,0 +1,10 @@
+.well
+  = form.input :locale,  collection: I18n.available_locales
+
+.well
+  ~ form.input :meta_description
+  ~ form.input :body, input_html: { 'data-add-editor': Itsf::Backend.features?(:'ace-rails-ap'), 'data-editor-syntax': form.object.handler }
+
+.well
+  = form.input :format,  collection: Mime::SET.symbols
+  = form.input :handler, collection: ActionView::Template::Handlers.extensions

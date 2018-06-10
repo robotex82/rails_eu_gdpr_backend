@@ -1,0 +1,4 @@
+
+  localized do
+    mount EuGdpr::Backend::Engine, :at => '/backend/eu-gdpr-backend-engine'
+  end

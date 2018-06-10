@@ -1,0 +1,15 @@
+de:
+  activerecord:
+    models:
+      eu_gdpr/privacy_policy:
+        one: Datenschutzerklärung
+        other: Datenschutzerklärungen
+  activemodel:
+    models:
+      eu_gdpr/personal_data:
+        one: Personenbezogene Daten
+        other: Personenbezogene Daten
+  classes:
+    eu_gdpr/backend/engine: EU DSGVO
+  routes:
+    eu-gdpr-backend-engine: 'eu-dsgvo'

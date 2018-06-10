@@ -1,0 +1,1 @@
+Rails.application.config.assets.precompile += %w( eu_gdpr_backend.css eu_gdpr_backend.js )
