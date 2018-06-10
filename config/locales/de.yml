@@ -9,6 +9,11 @@ de:
       eu_gdpr/personal_data:
         one: Personenbezogene Daten
         other: Personenbezogene Daten
+    attributes:
+      eu_gdpr/personal_data:
+        root: Wurzelobjekt
+        options: Optionen
+        block: Block
   classes:
     eu_gdpr/backend/engine: EU DSGVO
   routes:
