@@ -1,4 +1,7 @@
 de:
+  eu_gdpr:
+    privacy_policy:
+      default_title: Datenschutzerklärung
   activerecord:
     models:
       eu_gdpr/privacy_policy:

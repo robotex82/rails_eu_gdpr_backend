@@ -15,7 +15,7 @@ module EuGdpr
 
     def set_locale_dependent_defaults
       return if self.locale.nil?
-      self.title    ||= EuGdpr::Configuration.privacy_policy_defaults_for(self.locale)[:title]
+      self.title    ||= I18n.with_locale(self.locale) { I18n.t('eu_gdpr.privacy_policy.default_title') }
     end
   end
 end
