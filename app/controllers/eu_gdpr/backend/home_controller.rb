@@ -1,7 +1,7 @@
 module EuGdpr
   module Backend
-    class HomeController < Itsf::Backend::HomeController
-      helper Rails::AddOns::TableHelper
+    class HomeController < Administrador::HomeController::Base
+      # helper Rao::Component::TableHelper
     end
   end
 end

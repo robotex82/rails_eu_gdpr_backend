@@ -1,5 +1,5 @@
 module EuGdpr
-  class PrivacyPolicy < Ecm::Cms::Page
+  class PrivacyPolicy < Cmor::Cms::Page
     after_initialize :set_defaults, :if => :new_record?
     before_validation :set_locale_dependent_defaults, :if => :new_record?
 

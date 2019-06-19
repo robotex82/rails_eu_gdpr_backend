@@ -1,3 +1,5 @@
+require 'rao-component'
+
 require 'eu_gdpr/backend/configuration'
 require "eu_gdpr/backend/engine"
 

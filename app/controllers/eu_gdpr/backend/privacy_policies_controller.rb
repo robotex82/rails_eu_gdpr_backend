@@ -1,5 +1,5 @@
 module EuGdpr::Backend
-  class PrivacyPoliciesController < Itsf::Backend::Resource::BaseController
+  class PrivacyPoliciesController < Administrador::ResourcesController::Base
     def self.resource_class
       EuGdpr::PrivacyPolicy
     end

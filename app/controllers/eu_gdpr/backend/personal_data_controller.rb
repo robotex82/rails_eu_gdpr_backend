@@ -1,7 +1,11 @@
 module EuGdpr::Backend
-  class PersonalDataController < Itsf::Backend::Resource::BaseController
+  class PersonalDataController < Administrador::ResourcesController::Base
     def self.resource_class
       EuGdpr::PersonalData
+    end
+
+    def self.available_rest_actions
+      super - %i(edit new)
     end
 
     private
