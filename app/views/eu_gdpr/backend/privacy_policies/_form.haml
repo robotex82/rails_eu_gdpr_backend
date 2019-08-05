@@ -1,9 +1,9 @@
 .well
-  = form.input :locale,  collection: I18n.available_locales
+  = form.input :locale,  collection: I18n.available_locales.map(&:to_s)
 
 .well
   ~ form.input :meta_description
-  ~ form.input :body, input_html: { 'data-add-editor': Itsf::Backend.features?(:'ace-rails-ap'), 'data-editor-syntax': form.object.handler }
+  ~ form.input :body
 
 .well
   = form.input :format,  collection: Mime::SET.symbols
